@@ -1,0 +1,13 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Placeholder schema for Phase 0. Models will be added in Phase 1.
+model Placeholder {
+  id String @id @default(cuid())
+}
